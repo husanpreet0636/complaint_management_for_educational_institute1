@@ -1,0 +1,149 @@
+/* Add Complaint Page Styling */
+.useradd-complaint-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  padding: 20px;
+}
+
+.usercomplaint-form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.usercomplaint-form h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.userinput-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.userinput-group label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #e5e7eb;
+}
+
+.userinput-group input,
+.userinput-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  resize: vertical;
+}
+
+.userinput-group input:focus,
+.userinput-group textarea:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.3);
+}
+
+.usersubmit-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #4f46e5, #6d28d9);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.usersubmit-btn:disabled {
+  background: #a0aec0;
+  cursor: not-allowed;
+}
+
+.usersubmit-btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+.userback2-btn {
+  margin-top: 10px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.userback2-btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+@media (max-width: 768px) {
+  .usercomplaint-form {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .usercomplaint-form h2 {
+    font-size: 1.8rem;
+  }
+
+  .userinput-group input,
+  .userinput-group textarea {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  .usersubmit-btn,
+  .userback2-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .usercomplaint-form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .usercomplaint-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .userinput-group input,
+  .userinput-group textarea {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .usersubmit-btn,
+  .userback2-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}

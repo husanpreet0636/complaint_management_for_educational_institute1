@@ -1,0 +1,166 @@
+/* General Login Page Styling */
+.oldlogin1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.oldlogin2 {
+  background: #faf9f9;
+  padding: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  transform: translateY(-50px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.oldlogin2:hover {
+  transform: translateY(0);
+}
+
+.oldlogin-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.message {
+  color: #e53e3e;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.oldinput-group,
+.logininput-group {
+  margin-bottom: 20px;
+  text-align: left;
+  position: relative;
+}
+
+.oldinput-group label,
+.logininput-group label {
+  font-size: 1.1rem;
+  color: #4a5568;
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.oldinput-group input,
+.logininput-group input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  color: #4a5568;
+  background-color: #f9fafb;
+  transition: all 0.3s ease;
+}
+
+.oldinput-group input:focus,
+.logininput-group input:focus {
+  outline: none;
+  border-color: #667eea;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+}
+
+.oldlogin-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.oldlogin-btn:hover {
+  background-color: #4c6ef5;
+  transform: scale(1.05);
+}
+
+.oldlogin-btn:disabled {
+  background-color: #cbd5e0;
+  cursor: not-allowed;
+}
+
+.oldbutton-group {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.oldback-btn,
+.oldsignup-btn {
+  padding: 12px 18px;
+  font-size: 1rem;
+  background-color: #edf2f7;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.oldback-btn:hover,
+.oldsignup-btn:hover {
+  background-color: #e2e8f0;
+  transform: scale(1.05);
+}
+
+.oldback-btn {
+  color: #2d3748;
+}
+
+.oldsignup-btn {
+  background-color: #38b2ac;
+  color: white;
+}
+
+.oldsignup-btn:hover {
+  background-color: #319795;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .oldlogin2 {
+    padding: 30px;
+    max-width: 90%;
+    transform: translateY(0);
+  }
+
+  .oldlogin-title {
+    font-size: 2rem;
+  }
+
+  .oldinput-group input,
+  .logininput-group input,
+  .oldlogin-btn {
+    font-size: 1rem;
+  }
+
+  .oldbutton-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .oldback-btn,
+  .oldsignup-btn {
+    width: 100%;
+  }
+}
